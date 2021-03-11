@@ -1,6 +1,22 @@
-.protop{
-   background-color: pink;
-   padding-top: 80px;
+/*imported google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+
+.card{
+  position: absolute;
+  padding: 10px;
+  top: 60%;
+  left: 30%;
+  font-family: 'Baloo Bhaina 2';
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card .card-title{
+  font-size: 30px;
+  font-weight: bold;
+}
+.card .card-subtitle{
+  font-size: 20px;
 }
 .protop img{
   width: 100%;
