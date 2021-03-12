@@ -1,3 +1,7 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 <section class="home">
   <img src="../../assets/imgs/background.jpg">
   <div class="homecontent">
@@ -29,3 +33,72 @@
     </div>
   </div>
 </section>
+<section class="procount">
+  <div class="middle">
+    <div class="counting-sec">
+      <div class="inner-width">
+        <div class="col">
+          <i class="far fa-smile-wink"></i>
+          <div class="num">100+</div>
+          Happy Clients
+        </div>
+        <div class="col">
+          <i class="fas fa-solar-panel"></i>
+          <div class="num">40000+</div>
+          Solar Panels Installed
+        </div>
+        <div class="col">
+          <i class="fab fa-google"></i>
+          <div class="num">4.5/5</div>
+          Google Review
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="services">
+   <div class="container">
+    <h1 class="text-center">Our Services</h1>
+     <div class="row mt-5">
+        <div class="col-lg-4 mb-5"  *ngFor="let cs of services">
+          <div class="box shadow-sm">
+            <img src="{{cs.image}}" width="100%">
+          <h5 class="mt-2">{{cs.name}}</h5>
+          <p class="mt-2">{{cs.description}}</p>
+          </div>
+        </div>
+     </div>
+  </div>
+</section>
+<section class="install">
+  <div class="container">
+    <h1 class="text-install">Installation Process Steps</h1>
+    <div class="val"></div>
+     <div class="row mt-5">
+        <div class="col-lg-4 mb-5"  *ngFor="let cs of install">
+          <div class="box-install">
+            <img src="{{cs.image}}" width="100%">
+          <h5 class="mt-2">{{cs.name}}</h5>
+          <p class="mt-2">{{cs.description}}</p>
+          </div>
+        </div>
+     </div>
+  </div>
+</section>
+<section class="experties">
+  <div class="container">
+   <h1 class="text-center">Our Experties</h1>
+    <div class="row mt-5">
+       <div class="col-lg-4 mb-5"  *ngFor="let cs of experties">
+         <div class="box shadow-sm">
+           <img src="{{cs.image}}" width="100%">
+         <h5 class="mt-2">{{cs.name}}</h5>
+         <p class="mt-2">{{cs.description}}</p>
+         </div>
+       </div>
+    </div>
+ </div>
+</section>
+<script type="text/javascript">
+ $(".num").counterUp({delay:10,time:1000});
+</script>

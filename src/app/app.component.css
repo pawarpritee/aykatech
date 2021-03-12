@@ -123,3 +123,7 @@ font-size: 20px;
     text-align: center;
   }
 }
+.nav-item .btn{
+  background-color: orange;
+  border: orangered;
+}

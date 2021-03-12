@@ -70,3 +70,95 @@
     font-size: 16px;
     font-weight: 400;
 }
+.services{
+  background-color:#eff6ff;
+  padding: 70px 100px;
+}
+.experties{
+  background-color:#eff6ff;
+  padding-top: 20px;
+}
+@media screen and(max-width:600px)
+{
+  .services{
+    background-color:#eff6ff;
+    padding: 50px 10px;
+  }
+  .about{
+    background-color: #584444;
+    padding: 50px 10px;
+  }
+}
+.box h5{
+  text-align: center;
+  font-size: 20px;
+}
+.box:hover{
+
+  color: #ffffff;
+  background-image: linear-gradient(rgba(52, 243, 227, 0.733),rgba(0, 0, 255, 0.589));
+}
+.box{
+  background-color: #ffffff;
+  padding: 10px 20px;
+  transition: transform .2s;
+  border-radius: 10px;
+}
+.box p{
+  font-size: 15px;
+  font-weight: 350;
+  text-align: center;
+}
+.text-center {
+  border-left: 5px solid green;
+  height: 60px;
+  font-size: 50px;
+  font-weight: bold;
+  padding-right: 68%;
+}
+.text-install {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+.val{
+  border-bottom: 6px solid green;
+  width: 200px;
+  margin-left: 40%;
+}
+.counting-sec{
+  padding: 40px 0;
+  width:100%;
+  background: linear-gradient(90deg,#3c6382,#82ccdd);
+}
+.inner-width{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+}
+.col{
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.col i{
+  font-size: 50px;
+  color: #fff;
+}
+.num{
+  font-size: 40px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+.box-install{
+  margin: 20px;
+  align-items: center;
+}
+.box-install img{
+  width: 40%;
+  height:40%
+}
