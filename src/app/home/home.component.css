@@ -1,3 +1,7 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
 .home img
 {
   width: 100%;
@@ -23,36 +27,32 @@
 .homecontent a{
   margin-top: 10px;
 }
-@media screen and (max-width:600px)
-{
-  .home img{
-    height: 700px;
-  }
-  .homecontent h1
-  {
-    font-size: 40px;
-  }
-}
+
 /* Create two equal columns that floats next to each other */
-.column {
+.columnl{
   float: left;
   width: 50%;
   padding: 10px;
   height: 500px; /* Should be removed. Only for demonstration */
 }
-
+.columnr{
+  float: right;
+  width: 50%;
+  padding: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+}
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-.column .top-left img{
+.columnl .top-left img{
   padding: 0 0 110px 110px;
    width: 100%;
   height: 500px;
 }
-.column .img-left img{
+.columnl .img-left img{
   top: 50%;
   left: 60%;
   width: 25%;
@@ -60,34 +60,24 @@
   transform: translate(15%, -110%);
 }
 
-.column h4{
+.columnr h4{
   padding: 20px;
   font-size: 30px;
   font-weight: bold;
 }
-.column .subtitle p{
+.columnr .subtitle p{
     padding: 30px;
     font-size: 16px;
     font-weight: 400;
 }
 .services{
   background-color:#eff6ff;
-  padding: 70px 100px;
+  text-align: center;
+  padding-left: 50px;
 }
 .experties{
   background-color:#eff6ff;
-  padding-top: 20px;
-}
-@media screen and(max-width:600px)
-{
-  .services{
-    background-color:#eff6ff;
-    padding: 50px 10px;
-  }
-  .about{
-    background-color: #584444;
-    padding: 50px 10px;
-  }
+  padding-left: 50px;
 }
 .box h5{
   text-align: center;
@@ -133,7 +123,7 @@
   background: linear-gradient(90deg,#3c6382,#82ccdd);
 }
 .inner-width{
-  max-width: 1200px;
+   max-width: 1200px;
   margin: auto;
   display: flex;
 }
@@ -155,10 +145,46 @@
   font-weight: bold;
 }
 .box-install{
-  margin: 20px;
-  align-items: center;
+  text-align: center;
+  padding:10px 10px;
+
+}
+.install{
+  padding-left: 50px;
 }
 .box-install img{
   width: 40%;
   height:40%
+}
+@media screen and (max-width:780px)
+{
+  .home img{
+    height: 700px;
+  }
+  .homecontent h1
+  {
+    font-size: 40px;
+  }
+  .columnl .top-left img{
+    height: 350px;
+    width: 100%;
+  }
+  .columnr .title h4{
+    font-size: 20px;
+  }
+  .about .columnl {
+     height: 500px;
+     width: 100%;
+  }
+  .about .columnr{
+    width: 100%;
+    height: auto;
+  }
+  .services .box{
+    width: 70%;
+  }
+  .services{
+    width: 100%;
+  }
+
 }

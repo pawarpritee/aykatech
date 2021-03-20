@@ -7,7 +7,10 @@ import { HomeComponent } from './home/home.component';
 import { FaqComponent } from './faq/faq.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
-import { ProjectsComponent } from './projects/projects.component';
+import { CommercialComponent } from './commercial/commercial.component';
+import { ResidentailComponent } from './residentail/residentail.component';
+import { FinanceComponent } from './finance/finance.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -16,8 +19,11 @@ import { ProjectsComponent } from './projects/projects.component';
     FaqComponent,
     ContactComponent,
     AboutComponent,
-    ProjectsComponent
-    
+    CommercialComponent,
+    ResidentailComponent,
+    FinanceComponent,
+    BlogComponent
+
   ],
   imports: [
     BrowserModule,
